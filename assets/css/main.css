@@ -1078,10 +1078,22 @@ section,
   font-weight: 500;
 }
 
+  #btn-download-small {
+    display: none !important;
+  }
+
 @media (max-width: 768px) {
   .about .about-content .cta-section .fun-fact {
     justify-content: center;
     text-align: center;
+  }
+
+  #btn-download-small {
+    display: inline-block !important;
+  }
+
+  #btn-download-normal {
+    display: none !important;
   }
 }
 
