@@ -988,6 +988,53 @@ section,
   margin: 0;
 }
 
+.about .about-content .skills-grid .skill-item.cta-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack .btn {
+  width: 100%;
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack .btn.btn-primary {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border: 2px solid var(--accent-color);
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack .btn.btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-color), black 10%);
+  border-color: color-mix(in srgb, var(--accent-color), black 10%);
+  transform: translateY(-2px);
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack .btn.btn-outline {
+  background: transparent;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+}
+
+.about .about-content .skills-grid .skill-item.cta-item .cta-stack .btn.btn-outline:hover {
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  transform: translateY(-2px);
+}
+
 .about .about-content .journey-timeline {
   margin-bottom: 40px;
 }
@@ -1651,6 +1698,89 @@ section,
   margin: 0;
   padding-left: 0;
   list-style: none;
+}
+
+#certifications .education-section .education-timeline.certification-timeline {
+  padding-top: 2.25rem;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .timeline-track {
+  left: 0.75rem;
+  right: 0.75rem;
+  top: 10px;
+  bottom: auto;
+  width: auto;
+  height: 2px;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .row {
+  position: relative;
+  z-index: 1;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .cert-gap-end {
+  padding-right: 0;
+}
+
+@media (min-width: 992px) {
+  #certifications .education-section .education-timeline.certification-timeline .cert-gap-end {
+    padding-right: 1rem;
+  }
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item {
+  padding-left: 0;
+  margin-bottom: 0;
+  padding-top: 1.5rem;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .timeline-marker {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content {
+  height: 100%;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content.cert-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content .cert-logo {
+  display: block;
+  height: 70px;
+  margin: 0 auto;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content .cert-copy {
+  width: 100%;
+  text-align: justify;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content .cert-copy h3,
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content .cert-copy h4 {
+  text-align: center;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content .degree-header h3 {
+  font-size: 1.05rem;
+}
+
+#certifications .education-section .education-timeline.certification-timeline .education-item .education-content img {
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  #certifications .education-section .education-timeline.certification-timeline .timeline-track {
+    left: 1rem;
+    right: 1rem;
+    top: 10px;
+  }
 }
 
 .resume .education-section .education-timeline .education-item .education-content .achievements li {
